@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{# Estilo#}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+{% endblock %}
+
+{# Título do Site #}
+{% block title %} FINANÇAS FAMILIAR {% endblock %}
+
+{# Formulário de Cadastro #}
+{% block body %}
+
+<p class="msgErro">Oops! Falha ao cadastrar o usuário <strong>{{ fulano }}</strong></p>
+<a href="{{ url('web_usuario_index')}}">Voltar</a>
+{% endblock %}
